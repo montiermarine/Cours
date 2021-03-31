@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Exercices7.css" />
+        <title> Hello little World</title>
+    </head>
+    <body>
+        <fieldset class="blue">
+        <legend class="blue">Votre identité</legend>
+        <ol class="blue"> 
+        <form method="POST" action="traitement.php"class="blue">
+            <li>
+                <label for="Nom">Nom</label>
+                <input type="text" name="Nom" id="Nom" placeholder="Nom"/>
+            </li>
+            <li>
+                <label for="Prénom">Prénom</label>
+                <input type="text" name="Prénom" id="Prénom" placeholder="Prénom"/>
+            </li>
+            <li>
+                <label for="Adresse Mail">Adresse Mail</label>
+                <input type="text" name="Adresse Mail" id="Adresse Mail" placeholder="Adresse mail"/>
+            </li>
+        </form>
+        </ol>
+        </fieldset>
+        <fieldset class="purple">
+        <legend class="purple">Adresse de livraison</legend>
+            <ol class="purple">
+                <form method="post" action="traitement.php"class="purple">
+                    <li>
+                        <label for="Adresse">Adresse</label>
+                        <textarea rows="5" cols="6"></textarea>
+                    </li>
+                    <li>
+                        <label for="Code postal">Code postal</label>
+                        <input type="text"name="Code postal" id="Code postal" placeholder="Code postal"/>
+                    </li>
+                    <li>
+                        <label for="Ville">Ville</label>
+                        <input type="text"name="Ville" id="Ville" placeholder="Ville"/>
+                    </li>
+                </form>
+                </ol>
+            </fieldset>
+            <fieldset class="pink">
+            <legend class="pink">Informations de réglement</legend>
+            <ol class="pink">
+                <form method="post"action="traitement.php"class="pink">
+                    <li>
+                        <label for="Type de carte bancaire :">Type de carte bancaire</label><br/>
+                        <input type="radio" name="Type de carte bancaire" value="VISA" id="VISA"/><label for="VISA">VISA</label><br/>
+                        <input type="radio" name="Type de carte bancaire" value="Mastercard" id="Mastercard"/><label for="Mastercard">Mastercard</label><br/>
+                    </li>
+                    <li>
+                        <label for="Numéro de carte">Numéro de carte</label>
+                        <input type="text"name="Numéro de carte" id="Numéro de carte" placeholder="Numéro de carte"/>  
+                    </li>
+                    <li>
+                        <label for="Code de sécurité">Code de sécurité</label>
+                        <input type="text"name="Code de sécurité" id="Code de sécurité" placeholder="Code de sécurité"/>
+                    </li>
+                    <li>
+                        <label for="Nom du titulaire">Nom du titulaire</label>
+                        <input type="text"name="Nom du titulaire" id="Nom du titulaire" placeholder="Nom du titulaire"/>
+                    </li>
+                </form>
+            </ol>
+        </fieldset>
+        <input type="submit" value="J'achète !"/>
+    </body>
+</html>
